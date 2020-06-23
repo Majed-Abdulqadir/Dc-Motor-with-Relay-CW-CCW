@@ -1,0 +1,27 @@
+int rel = 12;   
+int re2 = 11;     
+
+void setup() {
+  pinMode(rel, OUTPUT);
+  pinMode(re2, OUTPUT); 
+  digitalWrite(rel, LOW);  
+  digitalWrite(re2, LOW); 
+} 
+
+void loop() {
+  digitalWrite(rel, HIGH);
+  digitalWrite(re2, LOW); 
+      delay(3000);
+  
+  digitalWrite(rel, LOW);
+  digitalWrite(re2, LOW); 
+      delay(2000);
+  
+  digitalWrite(rel, LOW); 
+  digitalWrite(re2, HIGH); 
+      delay(3000);
+  
+  digitalWrite(rel, LOW);
+  digitalWrite(re2, LOW); 
+      delay(2000);
+}
